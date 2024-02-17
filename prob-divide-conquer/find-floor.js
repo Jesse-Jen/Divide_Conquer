@@ -4,7 +4,7 @@ function findFloor(arr, target, low = 0, high = arr.length -1) {
   if(target < arr[low]){
     return -1
   }
-  //checking if its an empty array
+  //checking if its an empty array or sorted
   if (low > high){
     return -1
   }
