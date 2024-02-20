@@ -23,7 +23,7 @@ function findPivot(arr){
         //checking if mid is the index
         if(arr[mid] > arr[mid + 1]){
             return mid
-        }
+        } 
         //checking left side
         if(arr[mid] < arr[left]){
             right = mid - 1
@@ -44,10 +44,10 @@ function binarySearch(arr, target, left, right){
         if (arr[mid] === target){
             return mid
         }
-        //checking left side
+        //checking right side
         if(arr[mid] < target){
             left = mid  +1
-        //checking right side
+        //checking left side
         }else{
             right = mid - 1
         }
@@ -56,4 +56,5 @@ function binarySearch(arr, target, left, right){
 }
 
 module.exports = findRotatedIndex
+
 

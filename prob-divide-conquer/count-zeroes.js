@@ -8,9 +8,7 @@ function countZeroes(arr){
 
 function findFirstZero(arr, low = 0, high = arr.length -1){
   //checking for empty array
-  if (low > high){
-    return -1
-  }
+  
   while(low <= high){
     let mid = Math.floor((low + high) / 2)
 
@@ -26,6 +24,7 @@ function findFirstZero(arr, low = 0, high = arr.length -1){
     }
     
   }
+  return -1
 }
 
 module.exports = countZeroes
